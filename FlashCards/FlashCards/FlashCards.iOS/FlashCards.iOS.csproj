@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ACD9CB5E-0A2D-488E-804B-37138BD8713E}</ProjectGuid>
+    <ProjectGuid>{6ADDAA29-5E44-44BB-995B-F876B4E92A8C}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Flash_Card_App.iOS</RootNamespace>
+    <RootNamespace>FlashCards.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Flash Card App.iOS</AssemblyName>
+    <AssemblyName>FlashCards.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -128,9 +128,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Flash Card App\Flash Card App.csproj">
-      <Project>{E7E971EE-FCA6-4DA4-9123-8D0CFB2D0292}</Project>
-      <Name>Flash Card App</Name>
+    <ProjectReference Include="..\FlashCards\FlashCards.csproj">
+      <Project>{62A63689-B797-4933-A6E5-85B00A693A7A}</Project>
+      <Name>FlashCards</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

@@ -4,13 +4,18 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Flash_Card_App.MainPage">
+             x:Class="FlashCards.MainPage">
+
+    <NavigationPage.TitleView>
+        <Label Text="Topics" HorizontalOptions="Center" TextColor="White" FontSize="Medium">
+            
+        </Label>
+    </NavigationPage.TitleView>
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <ListView x:Name="lvTopics" ItemsSource="{Binding topics}">
+            
+        </ListView>
     </StackLayout>
 
 </ContentPage>

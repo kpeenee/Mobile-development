@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Flash_Card_App.iOS
+namespace FlashCards.iOS
 {
     public class Application
     {

@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Flash_Card_App
+namespace FlashCards
 {
     public partial class App : Application
     {
@@ -10,7 +10,7 @@ namespace Flash_Card_App
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
