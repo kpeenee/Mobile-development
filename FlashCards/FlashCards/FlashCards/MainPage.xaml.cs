@@ -22,5 +22,10 @@ namespace FlashCards
 
             
         }
+
+        void OnButtonAddClicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new AddFlashCardPage());
+        }
     }
 }

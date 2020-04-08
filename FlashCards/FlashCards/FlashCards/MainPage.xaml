@@ -4,18 +4,20 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="FlashCards.MainPage">
+             x:Class="FlashCards.MainPage"
+             Title="Flashcards">
 
-    <NavigationPage.TitleView>
-        <Label Text="Topics" HorizontalOptions="Center" TextColor="White" FontSize="Medium">
-            
-        </Label>
-    </NavigationPage.TitleView>
+
 
     <StackLayout>
         <ListView x:Name="lvTopics" ItemsSource="{Binding topics}">
             
         </ListView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="End">
+            <Button x:Name="btnAdd" Text="Add new card" HorizontalOptions="CenterAndExpand" Clicked="OnButtonAddClicked">
+                
+            </Button>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

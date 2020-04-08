@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FlashCards.AddFlashCardPage"
+             Title="Add new flashcard">
+    
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label HorizontalOptions="CenterAndExpand" Text="New Flashcard" FontSize="Large" Padding="20"></Label>
+            <Entry x:Name="entQuestion" Placeholder="Enter new question"></Entry>
+            <Entry x:Name="entAnswer" Placeholder="Enter the answer"></Entry>
+            <Button x:Name="btnNewFlashcard" Text="Add" VerticalOptions="EndAndExpand"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
