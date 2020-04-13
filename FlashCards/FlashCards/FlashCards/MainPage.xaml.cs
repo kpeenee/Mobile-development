@@ -19,8 +19,6 @@ namespace FlashCards
             InitializeComponent();
 
             BindingContext = viewModel;
-
-            
         }
 
         void OnButtonAddClicked(object sender, System.EventArgs e)
