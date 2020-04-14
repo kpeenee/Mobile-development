@@ -11,6 +11,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label HorizontalOptions="CenterAndExpand" Text="New Flashcard" FontSize="Large" Padding="20"></Label>
+            <Entry x:Name="entTopic" Placeholder="Enter topic"></Entry>
             <Entry x:Name="entQuestion" Placeholder="Enter new question"></Entry>
             <Entry x:Name="entAnswer" Placeholder="Enter the answer"></Entry>
             <Button x:Name="btnNewFlashcard" Text="Add" VerticalOptions="EndAndExpand"></Button>
