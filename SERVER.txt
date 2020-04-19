@@ -1,0 +1,5 @@
+SERVER
+
+URI: https://soft262-mobile-app.documents.azure.com:443/
+
+PRIMARY KEY: fpWWGCaZcx3p7E5muzdSalVQSHFfAExtXrsGI2XGnwkV7FXUuKABMgm5hWkbqbhphTYKlr5AZ19tv5vjV9u6LA==
