@@ -10,8 +10,12 @@
 
 
     <StackLayout>
-        <ListView x:Name="lvTopics" ItemsSource="{Binding topics}">
-            
+        <ListView x:Name="lvTopics" ItemsSource="{Binding Flashcards}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Question}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
         <StackLayout Orientation="Horizontal" VerticalOptions="End">
             <Button x:Name="btnAdd" Text="Add new card" HorizontalOptions="CenterAndExpand" Clicked="OnButtonAddClicked">

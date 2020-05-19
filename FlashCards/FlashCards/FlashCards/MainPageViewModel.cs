@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace FlashCards
 {
     class MainPageViewModel
     {
-        public List<string> topics { get; set; } = new List<string>();
+        public ObservableCollection<Flashcard> flashcards = new ObservableCollection<Flashcard>();
+        public ObservableCollection<Flashcard> Flashcards { get { return flashcards; }}
 
         
 
         public MainPageViewModel()
         {
-            topics.Add("Science");
-            topics.Add("Maths");
-            topics.Add("French");
-            topics.Add("Computing");
+            flashcards.Add(new Flashcard("Computing", "What is 2 in binary?", "10"));
+            flashcards.Add(new Flashcard("Science", "What is the chemical formula for ethanol?", "C2H5OH"));
         }
     }
 }
