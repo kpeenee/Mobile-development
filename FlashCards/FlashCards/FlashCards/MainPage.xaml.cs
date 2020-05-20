@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -17,13 +18,18 @@ namespace FlashCards
         public MainPage()
         {
             InitializeComponent();
-
+            
             BindingContext = viewModel;
         }
 
         void OnButtonAddClicked(object sender, System.EventArgs e)
         {
             Navigation.PushAsync(new AddFlashCardPage());
+        }
+
+        private void lvTopics_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            DisplayAlert("Answer!", viewModel.Flashcards[e.ItemIndex].Answer, "OK");
         }
     }
 }
