@@ -10,15 +10,10 @@
 
 
     <StackLayout>
-        <ListView x:Name="lvTopics" ItemsSource="{Binding Flashcards}" ItemTapped="lvTopics_ItemTapped">
+        <ListView x:Name="lvTopics" ItemsSource="{Binding Flashcards}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Vertical">
-                            <Label Text="{Binding Question}" TextColor="Black" FontSize="16" ></Label>
-                            <Label Text="{Binding Topic}" TextColor="BlueViolet" FontSize="12"></Label>
-                        </StackLayout>
-                    </ViewCell>
+                    <TextCell Text="{Binding Question}" TextColor="Black" Detail="{Binding Topic}" DetailColor="BlueViolet" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
