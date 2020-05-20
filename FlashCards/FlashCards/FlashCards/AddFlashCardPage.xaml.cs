@@ -19,7 +19,7 @@ namespace FlashCards
 
         private void btnNewFlashcard_Clicked(object sender, EventArgs e)
         {
-            add();
+           add();
         }
         async Task add()
         {

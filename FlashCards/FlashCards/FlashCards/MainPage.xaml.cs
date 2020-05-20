@@ -31,5 +31,10 @@ namespace FlashCards
         {
             Navigation.PushAsync(new AddFlashCardPage());
         }
+
+        private void lvTopics_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            DisplayAlert("Answer!!", viewModel.Flashcards[e.ItemIndex].Answer, "OK");
+        }
     }
 }
