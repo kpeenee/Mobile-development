@@ -13,7 +13,7 @@
         <ListView x:Name="lvTopics" ItemsSource="{Binding Flashcards}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Question}" />
+                    <TextCell Text="{Binding Question}" TextColor="Black" Detail="{Binding Topic}" DetailColor="BlueViolet" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
