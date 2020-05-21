@@ -19,13 +19,8 @@ namespace FlashCards
             InitializeComponent();
 
             BindingContext = viewModel;
-            Create();
         }
-        async Task Create()
-        {
-            DatabaseProgram DP = new DatabaseProgram();
-            await DP.CreateDB();
-        }
+      
 
         void OnButtonAddClicked(object sender, System.EventArgs e)
         {

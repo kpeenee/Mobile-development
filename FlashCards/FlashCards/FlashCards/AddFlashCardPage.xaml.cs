@@ -19,16 +19,8 @@ namespace FlashCards
 
         private void btnNewFlashcard_Clicked(object sender, EventArgs e)
         {
-           add();
+           
         }
-        async Task add()
-        {
-            string name = entName.Text;
-            string topic = entTopic.Text;
-            string question = entQuestion.Text;
-            string answer = entAnswer.Text;
-            DatabaseProgram DP = new DatabaseProgram();
-            await DP.AddFlashcardIfDoesNotExist(new Flashcard(name, topic, question, answer));
-        }
+        
     }
 }
