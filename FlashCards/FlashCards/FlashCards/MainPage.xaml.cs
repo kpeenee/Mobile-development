@@ -24,7 +24,7 @@ namespace FlashCards
 
         void OnButtonAddClicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new AddFlashCardPage());
+            Navigation.PushAsync(new AddFlashCardPage(viewModel.Flashcards));
         }
 
         private void lvTopics_ItemTapped(object sender, ItemTappedEventArgs e)
