@@ -22,7 +22,15 @@ namespace FlashCards
 
         private void btnNewFlashcard_Clicked(object sender, EventArgs e)
         {
-            usersCards.Add(new Flashcard(entTopic.Text, entQuestion.Text, entAnswer.Text));
+            if (usersCards != null)
+            {
+                usersCards.Add(new Flashcard(entTopic.Text, entQuestion.Text, entAnswer.Text));
+            }
+            else
+            {
+                usersCards = new ObservableCollection<Flashcard>();
+                usersCards.Add(new Flashcard(entTopic.Text, entQuestion.Text, entAnswer.Text));
+            }
             SaveSystem.Save(usersCards);
         }
         

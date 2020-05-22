@@ -13,7 +13,21 @@
         <ListView x:Name="lvTopics" ItemsSource="{Binding Flashcards}" ItemTapped="lvTopics_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Question}" TextColor="Black" Detail="{Binding Topic}" DetailColor="BlueViolet" />
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Clicked="Edit_Clicked"
+                                      CommandParameter="{Binding .}"
+                                      Text="Edit"/>
+                            <MenuItem Clicked="Delete_Clicked"
+                                      CommandParameter="{Binding .}"
+                                      Text="Delete"
+                                      IsDestructive="True"/>
+                        </ViewCell.ContextActions>
+                        <StackLayout> 
+                            <Label Text="{Binding Question}" FontSize="16"/>
+                            <Label Text="{Binding Topic}" TextColor="BlueViolet" FontSize="12"/>
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

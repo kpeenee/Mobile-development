@@ -16,9 +16,23 @@ namespace FlashCards
         {
             flashcards = SaveSystem.Load();
         }
-        public void RemoveFlashcard(int i)
+        public void RemoveFlashcard(Flashcard card)
         {
-            flashcards.RemoveAt(i);
+            int cardToRemove = 0;
+            bool isRemoved = false;
+            do
+            {
+                if(card.Question == Flashcards[cardToRemove].Question)
+                {
+                    Flashcards.RemoveAt(cardToRemove);
+                    isRemoved = true;
+                }
+                else
+                {
+                    cardToRemove++;
+                }
+
+            } while (isRemoved == false);
             SaveSystem.Save(flashcards);
         }
         public void RemoveFlashcardGroup(string topic)
