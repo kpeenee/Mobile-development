@@ -51,5 +51,11 @@ namespace FlashCards
             DisplayAlert("Deleted ",  card.Question + " Has been deleted", "OK");
             
         }
+
+        private void lvTopics_Refreshing(object sender, EventArgs e)
+        {
+            viewModel.flashcards = SaveSystem.Load();
+            lvTopics.IsRefreshing = false;
+        }
     }
 }
