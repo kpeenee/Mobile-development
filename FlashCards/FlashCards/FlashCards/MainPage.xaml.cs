@@ -52,10 +52,6 @@ namespace FlashCards
             
         }
 
-        private void lvTopics_Refreshing(object sender, EventArgs e)
-        {
-            viewModel.flashcards = SaveSystem.Load();
-            lvTopics.IsRefreshing = false;
-        }
+        
     }
 }

@@ -10,8 +10,7 @@
 
 
     <StackLayout>
-        <ListView x:Name="lvTopics" ItemsSource="{Binding Flashcards}" ItemTapped="lvTopics_ItemTapped" IsPullToRefreshEnabled="True" 
-                  Refreshing="lvTopics_Refreshing">
+        <ListView x:Name="lvTopics" ItemsSource="{Binding Flashcards}" ItemTapped="lvTopics_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

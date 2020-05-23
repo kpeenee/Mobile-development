@@ -35,21 +35,13 @@ namespace FlashCards
             } while (isRemoved == false);
             SaveSystem.Save(flashcards);
         }
-        public void RemoveFlashcardGroup(string topic)
-        {
-            foreach (var flash in flashcards)
-            {
-                if (flash.Topic == topic)
-                {
-                    flashcards.Remove(flash);
-                }
-            }
-            SaveSystem.Save(flashcards);
-        }
+     
         public void EditFlashcard(Flashcard originalCard, Flashcard editFlashcard)
         {
             
             SaveSystem.Save(flashcards);
         }
+
+        
     }
 }
