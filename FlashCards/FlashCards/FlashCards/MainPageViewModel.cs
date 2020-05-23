@@ -46,11 +46,9 @@ namespace FlashCards
             }
             SaveSystem.Save(flashcards);
         }
-        public void EditFlashcard(int index, Flashcard editFlashcard)
+        public void EditFlashcard(Flashcard originalCard, Flashcard editFlashcard)
         {
-            flashcards[index].Topic = editFlashcard.Topic;
-            flashcards[index].Question = editFlashcard.Question;
-            flashcards[index].Answer = editFlashcard.Answer;
+            
             SaveSystem.Save(flashcards);
         }
     }

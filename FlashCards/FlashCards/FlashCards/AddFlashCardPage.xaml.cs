@@ -32,6 +32,10 @@ namespace FlashCards
                 usersCards.Add(new Flashcard(entTopic.Text, entQuestion.Text, entAnswer.Text));
             }
             SaveSystem.Save(usersCards);
+            DisplayAlert("Save", "Save successful", "OK");
+            entQuestion.Text = "";
+            entAnswer.Text = "";
+            entTopic.Text = "";
         }
         
     }

@@ -35,7 +35,12 @@ namespace FlashCards
 
         private void Edit_Clicked(object sender, EventArgs e)
         {
+            var mi = ((MenuItem)sender);
+            var card = mi.BindingContext as Flashcard;
 
+            var editPage = new EditPage(viewModel.Flashcards);
+            editPage.BindingContext = card;
+            Navigation.PushAsync(editPage);
         }
 
         private void Delete_Clicked(object sender, EventArgs e)
