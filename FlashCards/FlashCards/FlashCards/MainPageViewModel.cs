@@ -36,11 +36,7 @@ namespace FlashCards
             SaveSystem.Save(flashcards);
         }
      
-        public void EditFlashcard(Flashcard originalCard, Flashcard editFlashcard)
-        {
-            
-            SaveSystem.Save(flashcards);
-        }
+       
 
         
     }

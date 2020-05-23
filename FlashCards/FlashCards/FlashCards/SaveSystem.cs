@@ -42,7 +42,7 @@ namespace FlashCards
             }
             else
             {
-                return null;
+                return new ObservableCollection<Flashcard>();
             }
         }
     }
